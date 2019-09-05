@@ -1,5 +1,5 @@
 <?php
-namespace HZ\Contracts;
+namespace HZ\Contracts\Http;
 
 interface RequestInterface
 {
@@ -55,5 +55,5 @@ interface RequestInterface
      * @param   array $rules
      * @return  array|true
      */
-    public function validate(array $rules): string;
+    public function validate(array $rules);
 }
