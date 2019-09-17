@@ -10,4 +10,6 @@ Run the following command line using composer
 
 # List of interfaces
 
-- `RequestInterface`
+- [RequestInterface](./src/Http/RequestInterface.php)
+- [StorageInterface](./src/Storage/StorageInterface.php)
+- [SessionInterface](./src/Storage/SessionInterface.php)
