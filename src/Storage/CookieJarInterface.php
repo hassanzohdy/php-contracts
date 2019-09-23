@@ -1,7 +1,7 @@
 <?php
 namespace HZ\Contracts\Storage;
 
-interface CookieJarInterface extends StorageInterface
+interface CookieJarInterface
 {
     /**
      * Add new cookie 
