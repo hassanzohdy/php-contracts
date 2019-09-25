@@ -40,6 +40,13 @@ interface CookieJarInterface
     public function remove(string $key);
 
     /**
+     * Get all cookies
+     * 
+     * @return iterable
+     */
+    public function all(): iterable;
+
+    /**
      * Clear all cookies
      * 
      * @return void

@@ -56,4 +56,25 @@ interface RequestInterface
      * @return  array|true
      */
     public function validate(array $rules);
+
+    /**
+     * Determine if current request is served by https request
+     * 
+     * @return bool
+     */
+    public function isSecure(): bool;
+    
+    /**
+     * Get current ip
+     * 
+     * @return string
+     */
+    public function ip(): string;
+    
+    /**
+     * Get user agent
+     * 
+     * @return string
+     */
+    public function userAgent(): string;
 }
