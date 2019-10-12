@@ -20,3 +20,6 @@ Run the following command line using composer
 
 ## Encryption
 - [CookieJarInterface](./src/Encryption/EncrypterInterface.php)
+
+## Filesystem
+- [FilesystemInterface](./src/Filesystem/FilesystemInterface.php)

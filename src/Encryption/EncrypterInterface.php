@@ -10,7 +10,7 @@ interface EncrypterInterface
      * @param  string|array $value
      * @return string
      */
-    public function encrypt(string $value): string;
+    public function encrypt($value): string;
 
     /**
      * Decrypt the given cyphered text 
