@@ -57,6 +57,15 @@ interface FilesystemInterface
     public function get(string $path, bool $lock): string;
     
     /**
+     * Get the content of the given json file 
+     * 
+     * @param string $path
+     * @return array
+     * @throws FileNotFoundException
+     */
+    public function getJson(string $path, bool $assoc): array;
+    
+    /**
      * Require the given file path 
      * 
      * @param string $file
@@ -73,7 +82,7 @@ interface FilesystemInterface
     public function requireOnce(string $file);
     
     /**
-     * Get the content of the given file path
+     * Put the given content to the given file path
      * 
      * @param string $path
      * @param string $content
@@ -81,6 +90,16 @@ interface FilesystemInterface
      * @return int|false 
      */
     public function put(string $path, string $content, int $flags);
+    
+    /**
+     * Put the given content to the given json file path
+     * 
+     * @param string $path
+     * @param array $data
+     * @param int $flags
+     * @return int|false 
+     */
+    public function putJson(string $path, array $data, int $flags);
     
     /**
      * Add content to the beginning of the given file path
