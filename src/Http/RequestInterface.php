@@ -1,7 +1,9 @@
 <?php
 namespace HZ\Contracts\Http;
 
-interface RequestInterface
+use ArrayAccess;
+
+interface RequestInterface extends ArrayAccess
 {
     /**
      * Get value from the query parameters ie from _GET global variable

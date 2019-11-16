@@ -10,6 +10,8 @@ Run the following command line using composer
 
 ## Http
 - [RequestInterface](./src/Http/RequestInterface.php)
+- [ResponseInterface](./src/Http/ResponseInterface.php)
+- [UploadedFile](./src/Http/UploadedFile.php)
 - [RouterInterface](./src/Http/RouterInterface.php)
 
 ## Storage
